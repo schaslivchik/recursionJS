@@ -10,10 +10,8 @@ function pow(base, exponent) {
 console.log("pow(2,3) :>> ", pow(2, 3));
 
 //2
-function bracketWrapper(n) {
 
-  bracketWrapper(n);
-
+  
   function bracketWrapper(n) {
     if (n === 0) {
       return;
@@ -22,6 +20,7 @@ function bracketWrapper(n) {
     bracketWrapper(n - 1);
     console.log(")");
   }
-}
+  bracketWrapper(5);
 
-bracketWrapper(3);
+
+
